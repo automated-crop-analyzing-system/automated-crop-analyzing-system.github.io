@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+#table {
+    padding-top: 4rem;
+    border-radius: 50%;
+    box-shadow: 2px;
+}
+
+td {
+    align-items: center;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%)}
+.btn-grad {
+           margin: 10px;
+           padding: 10px 15px;
+           text-align: center;
+           transition: 0.5s;
+           background-size: 200% auto;
+           color: white;            
+           box-shadow: 0 0 20px #eee;
+           border-radius: 10px;
+           display: block;
+           align-items: center;
+         }
+
+         .btn-grad:hover {
+           background-position: right center; /* change the direction of the change here */
+           color: #fff;
+           text-decoration: none;
+         }
+
+        
+         

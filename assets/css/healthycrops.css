@@ -1,0 +1,29 @@
+#table {
+    padding-top: 4rem;
+    border-radius: 50%;
+    box-shadow: 2px;
+}
+
+td {
+    align-items: center;
+}
+         .btn-grad {background-image: linear-gradient(to right, #76b852 0%, #8DC26F  51%, #76b852  100%)}
+         .btn-grad {
+            margin: 10px;
+           padding: 10px 15px;
+           text-align: center;
+           transition: 0.5s;
+           background-size: 200% auto;
+           color: white;            
+           box-shadow: 0 0 20px #eee;
+           border-radius: 10px;
+           display: block;
+           align-items: center;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
