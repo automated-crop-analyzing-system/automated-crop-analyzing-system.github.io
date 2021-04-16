@@ -5,6 +5,7 @@
 :root{
   --header-height: 3rem;
   --nav-width: 68px;
+  --nav-width-mobile:100px;
 
   /*===== Colors =====*/
   --first-color: #006a4e;
@@ -258,6 +259,13 @@ a{
     padding-left: calc(var(--nav-width) + 188px);
   }
 }
+
+
+
+
+
+
+
 
 
 
