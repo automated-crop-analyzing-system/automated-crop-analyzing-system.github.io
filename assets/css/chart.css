@@ -5,51 +5,7 @@ body {
 h2 {
     font-display: center;
 }
-#wrapper {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    background-color: #ffffff;
-    color: #506678;
-    padding: 15px;
-  }
-  
-  .wrapper {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-  }
-  
-  .canvas {
-    position: relative;
-    width: 100%;
-  }
-  
-  .note {
-    width: 100%;
-    float: left;
-    text-align: center;
-    padding: 15px 0;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #506678;
-    border-bottom: 1px solid rgba(80, 102, 120, 0.25);
-    transition: all 0.35s;
-  
-    &:hover {
-      color: #677f93;
-      border-bottom: 1px solid rgba(149, 76, 233, 0.5);
-    }
-  }
-  
-  @media (min-width: 960px) {
-    body {
-      padding: 25px;
-    }
-  
-    .note {
-      padding: 25px 0;
-    }
-  }
-  
+.container {
+  width: 80%;
+  margin: 15px auto;
+}

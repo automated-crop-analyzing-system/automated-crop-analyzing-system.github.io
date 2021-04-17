@@ -1,0 +1,8 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+#table {
+    padding-top: 4rem;
+    border-radius: 50%;
+    box-shadow: 2px;
+}
