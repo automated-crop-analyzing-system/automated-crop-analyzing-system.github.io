@@ -8,4 +8,14 @@ h2 {
 .container {
   width: 80%;
   margin: 15px auto;
+  
+}
+
+.card {
+  background-image: linear-gradient(to right, #ffffff, #F7F8F8);
+  box-shadow: 2px 10px 20px rgba(0.1, 0.1, 0.1, 0.1);
+  border-radius: 7px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+ 
 }
