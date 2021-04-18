@@ -35,7 +35,7 @@
             <nav class="nav">
                 <div>
                     <a href="#" class="nav__logo">
-                        <i class='bx bx-layer nav__logo-icon'></i>
+                        <i class='bx bx-bug-alt nav__logo-icon'></i>
                         <span class="nav__logo-name">ACAS</span>
                     </a>
 
@@ -51,31 +51,31 @@
                         </a>
                         
                         <a href="map.html" class="nav__link">
-                            <i class='bx bx-world nav__icon' ></i>
+                            <i class='bx bx-map nav__icon' ></i>
                             <span class="nav__name">Map</span>
                         </a>
 
                         <a href="healthycrops.html" class="nav__link">
-                            <i class='bx bx-bookmark nav__icon' ></i>
+                            <i class='bx bx-happy-beaming nav__icon' ></i>
                             <span class="nav__name">Healthy Crops</span>
                         </a>
 
                         <a href="infectedcrops.html" class="nav__link">
-                            <i class='bx bx-folder nav__icon' ></i>
+                            <i class='bx bx-bug nav__icon' ></i>
                             <span class="nav__name">Infected Crops</span>
                         </a>
 
                         <a href="humidity.html" class="nav__link">
-                            <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
-                            <span class="nav__name">Humidity History</span>
+                            <i class='bx bx-droplet nav__icon' ></i>
+                            <span class="nav__name">Humidity</span>
                         </a>
                         <a href="soilmoisture.html" class="nav__link">
                             <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
-                            <span class="nav__name">Soil Moisture History</span>
+                            <span class="nav__name">Soil Moisture</span>
                         </a>
-                        <a href="temperature.html" class="nav__link">
-                            <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
-                            <span class="nav__name">Temperature History</span>
+                        <a href="map.html" class="nav__link">
+                            <i class='bx bx-capsule nav__icon' ></i>
+                            <span class="nav__name">Temperature</span>
                         </a>
                     </div>
                 </div>
@@ -128,118 +128,100 @@
           </div>
          
 
-          <div class="card-container">
-            <div class="card">
-                
-              
-              <div class="card-content">
-                <div class="container">
-                    <h2>Humidity</h2>
-                    <div>
-                      <canvas id="myChart"></canvas>
-                      <script>
-                          var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-            datasets: [{
-              label: 'humidity level',
-              data: [12, 19, 3, 17, 6, 3, 7],
-              backgroundColor: "#BA5370"
-            }]
-          }
-        });
-                      </script>
-                    </div>
-                  </div>
-                
-              </div>
-              
-              <div class="card-footer">
-                  
-              </div>
-            </div>
-
           
-          <div class="card-container">
-            <div class="card">
-              <div class="card-count-container">
-               
-              </div>
-              
-              <div class="card-content">
-                <div class="container">
-                    <h2>Soil Moisture</h2>
-                    <div>
-                      <canvas id="myChart2"></canvas>
-                      <script>
-                          var ctx = document.getElementById('myChart2').getContext('2d');
-        var myChart = new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-            datasets: [{
-              label: 'soilmoisture level',
-              data: [12, 19, 3, 17, 6, 3, 7],
-              backgroundColor: "#BA5370"
-            }]
-          }
-        });
-                      </script>
+
+                <div class="card-deck">
+                    <div class="card">
+                      
+                      <div class="card-body">
+                        <div class="card-content">
+                            <div class="container">
+                                <h2>Humidity Level</h2>
+                                <div>
+                                  <canvas id="myChart"></canvas>
+                                  <script>
+                                      var ctx = document.getElementById('myChart').getContext('2d');
+                                      var myChart = new Chart(ctx, {
+                                      type: 'line',
+                                        data: {
+                                            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+                                            datasets: [{
+                                            label: 'humidity level %',
+                                            data: [12, 19, 3, 17, 6, 3, 7],
+                                            backgroundColor: "#2C5364"
+                                            }]
+                                        }
+                                        });
+                                  </script>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      
+                      <div class="card-body">
+                        <div class="card-content">
+                            <div class="container">
+                                <h2>Temperature</h2>
+                                <div>
+                                  <canvas id="myChart2"></canvas>
+                                  <script>
+                                      var ctx = document.getElementById('myChart2').getContext('2d');
+                                      var myChart = new Chart(ctx, {
+                                      type: 'line',
+                                        data: {
+                                            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+                                            datasets: [{
+                                            label: 'temperature level',
+                                            data: [12, 19, 3, 17, 6, 3, 7],
+                                            backgroundColor: "#93291E"
+                                            }]
+                                        }
+                                        });
+                                  </script>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      
+                      <div class="card-body">
+                        <div class="card-content">
+                            <div class="container">
+                                <h2>Soil Moisture Level</h2>
+                                <div>
+                                  <canvas id="myChart3"></canvas>
+                                  <script>
+                                      var ctx = document.getElementById('myChart3').getContext('2d');
+                                      var myChart = new Chart(ctx, {
+                                      type: 'line',
+                                        data: {
+                                            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+                                            datasets: [{
+                                            label: 'soil moisture level %',
+                                            data: [12, 19, 3, 17, 6, 3, 7],
+                                            backgroundColor: "#a80077"
+                                            }]
+                                        }
+                                        });
+                                  </script>
+                                </div>
+                              </div>
+                          </div>
+                          
+                      </div>
                     </div>
                   </div>
-                
-              </div>
-              
-              <div class="card-footer">
-                  
-              </div>
-            </div>
-
-            <div class="card-container">
-                <div class="card">
-                  <div class="card-content">
-                    <div class="container">
-                        <h2>Humidity</h2>
-                        <div>
-                          <canvas id="myChart3"></canvas>
-                          <script>
-                              var ctx = document.getElementById('myChart3').getContext('2d');
-                              var myChart = new Chart(ctx, {
-                              type: 'line',
-                                data: {
-                                    labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-                                    datasets: [{
-                                    label: 'temperature level',
-                                    data: [12, 19, 3, 17, 6, 3, 7],
-                                    backgroundColor: "#2C5364"
-                                    }]
-                                }
-                                });
-                          </script>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="card-footer">  
-                  </div>
-                </div>
 
                   <!-- Site footer -->
                 <footer class="site-footer">
                     <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                        <h6>About</h6>
-                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales gravida ipsum id semper. Suspendisse in lobortis nisi. Morbi id aliquam elit. Phasellus sagittis nisi id mi ornare, id feugiat augue interdum. Ut vel ex id est congue aliquam. Sed eleifend convallis lectus, a commodo nulla feugiat ac.</p>
-                        </div>
-                    <hr>
-                    </div>
-                    <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-sm-6 col-xs-12">
-                        <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
-                    <a href="#">ACAS</a>.
+                        <div class="">
+                        <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by ACAS.
+                    
                         </p>
                         </div>
                     </div>
