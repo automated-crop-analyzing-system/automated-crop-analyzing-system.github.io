@@ -7,6 +7,10 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
     <link rel="stylesheet" href="assets/css/login.css" />
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo2.png">
@@ -20,13 +24,13 @@
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="email" placeholder="Email" id="email_feild"/>
+              <input type="email" placeholder="Email" id="txtEmail"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" id="password_feild" />
+              <input type="password" placeholder="Password" id="txtPassword" />
             </div>
-            <input type="submit" value="Login" class="btn solid" onclick="login()"/>
+            <input type="submit" value="Login" class="btn solid" id="btnLogin"/>
             <!--
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
@@ -46,19 +50,20 @@
           </form>
           <form action="#" class="sign-up-form">
             <h2 class="title">Sign up</h2>
+            <!--
             <div class="input-field">
               <i class="fas fa-user"></i>
               <input type="text" placeholder="Username" />
-            </div>
+            </div> -->
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" id="txtEmail2"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" id="txtPassword2"/>
             </div>
-            <input type="submit" class="btn" value="Sign up" />
+            <input type="submit" class="btn" value="Sign up" id="btnSignUp"/>
             <!--
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
@@ -107,31 +112,8 @@
       </div>
     </div>
 
-    <script src="assets/js/login.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="assets/js/app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      var firebaseConfig = {
-        apiKey: "AIzaSyBexYX3nBz-RjZRnrYCkiz2TRSoJuWbsfs",
-        authDomain: "acas-3a13f.firebaseapp.com",
-        databaseURL: "https://acas-3a13f-default-rtdb.firebaseio.com",
-        projectId: "acas-3a13f",
-        storageBucket: "acas-3a13f.appspot.com",
-        messagingSenderId: "58272733204",
-        appId: "1:58272733204:web:96b8631d68f1e84312af01",
-        measurementId: "G-05EBKZ3G7H"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
   </body>
 </html>
 
