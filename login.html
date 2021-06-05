@@ -7,16 +7,22 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-    https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+   
     <link rel="stylesheet" href="assets/css/login.css" />
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo2.png">
     <title>Sign in & Sign up Form</title>
   </head>
   <body>
+    <script src="assets/js/login.js"></script>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    
+      <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    
+      <!-- Add Firebase products that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
@@ -112,7 +118,10 @@
       </div>
     </div>
 
-    <script src="assets/js/app.js"></script>
+   
+    <body>
+      
+    </body>
 
   </body>
 </html>
