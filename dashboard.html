@@ -69,10 +69,6 @@
                             <i class='bx bx-droplet nav__icon' ></i>
                             <span class="nav__name">Humidity</span>
                         </a>
-                        <a href="soilmoisture.html" class="nav__link">
-                            <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
-                            <span class="nav__name">Soil Moisture</span>
-                        </a>
                         <a href="temperature.html" class="nav__link">
                             <i class='bx bx-capsule nav__icon' ></i>
                             <span class="nav__name">Temperature</span>
@@ -96,7 +92,7 @@
                     <h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Healthy Crops<svg
                         class="MuiSvgIcon-root-19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
                         
-                      </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count">10,500</span>
+                      </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count">2</span>
                   </div>
                 </div>
                 <div class="c-dashboardInfo col-lg-3 col-md-6">
@@ -104,7 +100,7 @@
                     <h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Infected Crops<svg
                         class="MuiSvgIcon-root-19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
                         
-                      </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count">500</span>
+                      </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count">1</span>
                   </div>
                 </div>
                 <div class="c-dashboardInfo col-lg-3 col-md-6">
@@ -147,7 +143,7 @@
                                             labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
                                             datasets: [{
                                             label: 'humidity level %',
-                                            data: [12, 19, 3, 17, 6, 3, 7],
+                                            data: [0, 0, 0, 80, 80, 80, 80],
                                             backgroundColor: "#2C5364"
                                             }]
                                         }
@@ -174,7 +170,7 @@
                                             labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
                                             datasets: [{
                                             label: 'temperature level',
-                                            data: [12, 19, 3, 17, 6, 3, 7],
+                                            data: [30, 0, 0, 17, 30, 30, 30],
                                             backgroundColor: "#93291E"
                                             }]
                                         }
@@ -190,24 +186,15 @@
                       <div class="card-body">
                         <div class="card-content">
                             <div class="container">
-                                <h2>Soil Moisture Level</h2>
-                                <div>
-                                  <canvas id="myChart3"></canvas>
-                                  <script>
-                                      var ctx = document.getElementById('myChart3').getContext('2d');
-                                      var myChart = new Chart(ctx, {
-                                      type: 'line',
-                                        data: {
-                                            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-                                            datasets: [{
-                                            label: 'soil moisture level %',
-                                            data: [12, 19, 3, 17, 6, 3, 7],
-                                            backgroundColor: "#a80077"
-                                            }]
-                                        }
-                                        });
-                                  </script>
-                                </div>
+                              
+                                <h2>Automated</h2>
+                                <br>
+                                <h2>Crop</h2>
+                                <br>
+                                <h2>Analyzing</h2>
+                                <br>
+                                <h2>System</h2>
+                                
                               </div>
                           </div>
                           

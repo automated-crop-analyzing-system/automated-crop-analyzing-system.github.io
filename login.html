@@ -14,7 +14,7 @@
     <title>Sign in & Sign up Form</title>
   </head>
   <body>
-    <script src="assets/js/login.js"></script>
+    <script src="index/assets/js/login.js"></script>
     <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
     
       <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
@@ -26,7 +26,7 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="#" class="sign-in-form">
+          <form action="dashboard.html" class="sign-in-form">
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -36,7 +36,7 @@
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" id="txtPassword" />
             </div>
-            <input type="submit" value="Login" class="btn solid" id="btnLogin"/>
+            <input type="submit" value="Login" class="btn solid" onclick="login()" />
             <!--
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
